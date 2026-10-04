@@ -1,0 +1,1 @@
+{"id":"water","name":"Wasser","cid":962,"formula":"H₂O","kind":"conformer","source":"https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/962/record/JSON?record_type=3d","retrieved":"2026-10-04","atoms":[{"element":8,"xyz":[0,0,0]},{"element":1,"xyz":[0.2774,0.8929,0.2544]},{"element":1,"xyz":[0.6068,-0.2383,-0.7169]}],"bonds":[[0,1,1],[0,2,1]]}

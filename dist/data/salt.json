@@ -1,0 +1,1 @@
+{"id":"salt","name":"Kochsalz","cid":5234,"formula":"NaCl","kind":"lattice","source":"https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5234/record/JSON?record_type=2d","retrieved":"2026-10-04","atoms":[{"element":17,"xyz":[3,0,0]},{"element":11,"xyz":[2,0,0]}],"bonds":[[0,1,7]]}
