@@ -10,3 +10,10 @@ Geprüft am 04.10.2026.
 - Fünf echte Screenshots erstellt und visuell geprüft.
 
 Grenzen: Kein Test auf physischem iPhone/Android, kein Safari-/Firefox-Durchlauf und keine unabhängige chemiedidaktische Begutachtung. Dieser Prüfstand bestätigt keinen externen Hosting-Deploy.
+
+## Update 1.1.0
+
+- Browser- und Datenprüfungen erneut erfolgreich, zusätzlich vier Atlas-Projektreiter geprüft.
+- Desktop-Protokollpfade geprüft: fremde Origins und kodierte Pfadausbrüche werden abgewiesen.
+- Acht neue Galerieaufnahmen, Desktop 1800 × 1160 und Mobil 430 Pixel breit.
+- Native Windows-/macOS-Prüfung und Paketierung laufen im [Release-Workflow](https://github.com/dogenc/ELEMENTA/actions/workflows/desktop.yml). Maßgeblich ist dessen Ergebnis, nicht ein lokaler Linux-Test.

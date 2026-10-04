@@ -4,10 +4,20 @@
 **Vom einzelnen Elektron bis zum Molekül des Alltags.**  
 Ein interaktiver Chemie-Atlas auf Deutsch — direkt im Browser.
 
-![Version](https://img.shields.io/badge/Version-1.0.0-167568?style=for-the-badge)
+![Version](https://img.shields.io/badge/Version-1.1.0-167568?style=for-the-badge)
 ![Elemente](https://img.shields.io/badge/Elemente-118-167568?style=for-the-badge)
 ![Strukturen](https://img.shields.io/badge/PubChem-8_Einträge-167568?style=for-the-badge)
 ![Abläufe](https://img.shields.io/badge/Abläufe-3_animiert-167568?style=for-the-badge)
+
+```text
+█████  █      █████  █   █  █████  █   █  █████   ███ 
+█      █      █      ██ ██  █      ██  █    █    █   █
+█      █      █      █ █ █  █      ██  █    █    █   █
+████   █      ████   █ █ █  ████   █ █ █    █    █████
+█      █      █      █   █  █      █  ██    █    █   █
+█      █      █      █   █  █      █  ██    █    █   █
+█████  █████  █████  █   █  █████  █   █    █    █   █
+```
 
 **[Starten](#starten) · [Entdecken](#drei-perspektiven-auf-materie) · [Screenshots](#echte-einblicke) · [Quellen](NOTICE.md)**
 </div>
@@ -51,19 +61,25 @@ ELEMENTA ist der vierte Atlas von **DGKN@Labs**, nach CORPUS, [CELLULA](https://
 
 ## Echte Einblicke
 
-Die folgenden Bilder werden aus der laufenden Anwendung aufgenommen, nicht als Mockups erzeugt.
+Acht echte Aufnahmen aus ELEMENTA 1.1.0: **1800 × 1160 Pixel**, dazu eine separate Handyansicht. Dunkles Studio, helle Lernpanels und die Atlas-Navigation sind Teil der laufenden App.
 
-![Periodensystem und Atommodell](docs/01-elemente.png)
+![ELEMENTA Atomstudio mit Atlas-Navigation](docs/gallery/01-atomstudio.webp)
 
-| Orbitale | Moleküle |
+| Orbitalstudio · Kupfer 3d | Koffein · PubChem |
 |---|---|
-| ![Orbitalmodell](docs/02-orbitale.png) | ![Koffein aus PubChem](docs/03-molekuele.png) |
+| ![Wasserstoffartiges 3d-Orbital](docs/gallery/02-orbitalstudio.webp) | ![Koffein im dunklen Studio](docs/gallery/03-koffein.webp) |
 
-![Salz in Wasser](docs/04-ablaeufe.png)
+| Vitamin C · Kalotten | Kochsalz · Ionengitter |
+|---|---|
+| ![Vitamin C in der Kalottendarstellung](docs/gallery/04-vitamin-c.webp) | ![Natriumchlorid als Ionengitter](docs/gallery/05-ionengitter.webp) |
 
-<details><summary>Mobile Ansicht</summary>
-<img src="docs/05-mobil.png" width="320" alt="ELEMENTA bei 390 Pixel Displaybreite">
-</details>
+![Salz in Wasser: räumliche Hydrathüllen und Zeitleiste](docs/gallery/06-hydratation.webp)
+
+| Elektronenpaarbindung | Auf dem Smartphone |
+|---|---|
+| ![H2-Bindung Schritt für Schritt](docs/gallery/07-bindung.webp) | <img src="docs/gallery/08-mobil.webp" width="270" alt="ELEMENTA auf dem Handy mit Navigation zu allen vier Atlanten"> |
+
+[**Galerie in voller Auflösung →**](docs/gallery/)
 
 ## Starten
 
@@ -90,7 +106,46 @@ Den Inhalt von **`dist/`** als Website ausliefern — beispielsweise mit Cloudfl
 | Backend / Umgebungsvariablen | keine |
 | Unterverzeichnisse | unterstützt durch relative Asset-Pfade |
 
-Die Website ist statisch. Es gibt keinen Service Worker und keine automatische Offline-Installation; ein lokaler Checkout funktioniert ohne Internetverbindung über den lokalen Server. Dieses Repository enthält keine Desktop-Installer.
+Die Website ist statisch. Es gibt keinen Service Worker und keine automatische Offline-Installation; ein lokaler Checkout funktioniert ohne Internetverbindung über den lokalen Server. Desktop-Pakete werden separat über GitHub Actions gebaut; die Website selbst bleibt ohne Build nutzbar.
+
+## Desktop-Downloads
+
+**[Windows & macOS herunterladen →](https://github.com/dogenc/ELEMENTA/releases/latest)** · [Build-Status ansehen](https://github.com/dogenc/ELEMENTA/actions/workflows/desktop.yml)
+
+| Paket | Verwendung |
+|---|---|
+| `ELEMENTA-1.1.0-Windows-Setup.exe` | Installierbare Windows-App, x64 |
+| `ELEMENTA-1.1.0-Windows-portable.exe` | Ohne Installation starten, x64 |
+| `ELEMENTA-1.1.0-macOS.dmg` | macOS-App für Intel und Apple Silicon |
+| `ELEMENTA-1.1.0-Web.zip` | Statische Dateien für die eigene Domain |
+| `SHA256SUMS.txt` | Prüfsummen der Downloads |
+
+Der Workflow veröffentlicht diese Dateien **erst nach erfolgreichen Daten-, Browser- und nativen Desktop-Prüfungen**. Bei einem noch laufenden oder fehlgeschlagenen Build stehen sie entsprechend noch nicht bereit. Windows- und macOS-Pakete sind ohne kommerzielles Herausgeberzertifikat; macOS ist nicht notarisiert. Das Betriebssystem kann deshalb Warnungen anzeigen.
+
+Die Desktop-App benötigt weder Python noch einen lokalen Webserver. Alle Modelle und Bibliotheken werden mitgeliefert. Notizen bleiben im lokalen App-Profil. Links zu CORPUS, CELLULA, TERRA und Fachquellen öffnen den Standardbrowser.
+
+Für Entwickler:
+
+```bash
+cd desktop
+npm ci
+npm start
+# Auf Windows:
+npm run dist:win
+# Auf macOS:
+npm run dist:mac
+```
+
+## Die Atlas-Familie
+
+Die Leiste am unteren App-Rand verbindet alle vier Projekte. Auf dem Smartphone passen sich die Reiter auf zwei Spalten an.
+
+| Atlas | Thema |
+|---|---|
+| [**01 · CORPUS**](https://github.com/dogenc/CORPUS-Anatomieatlas) | Der menschliche Körper |
+| [**02 · CELLULA**](https://github.com/dogenc/CELLULA) | Die Welt der Zellen |
+| [**03 · TERRA**](https://github.com/dogenc/TERRA) | Unser Planet |
+| **04 · ELEMENTA** | Die Materie verstehen |
 
 ## Technik und Bearbeitung
 
@@ -103,7 +158,9 @@ Die Website ist statisch. Es gibt keinen Service Worker und keine automatische O
 | `dist/data/` | PubChem-Rohantworten und aufbereitete Daten |
 | `dist/vendor/` | Three.js 0.180.0 und OrbitControls, lokal |
 | `scripts/prepare_data.py` | Daten aus PubChem aktualisieren |
-| `tests/` | Datenprüfung und Browser-Smoke-Test |
+| `tests/` | Daten-, Browser- und native Desktop-Prüfungen |
+| `desktop/` | Electron-App und Installer-Konfiguration |
+| `.github/workflows/desktop.yml` | Prüfungen, Paketbau und Release |
 
 ### Prüfen
 
@@ -121,7 +178,7 @@ npx playwright install chromium
 node tests/browser.cjs
 ```
 
-Der Test startet den lokalen Server selbst und prüft Desktop und Mobilansicht, Moduswechsel, die acht Strukturen, Prozessschritte, persistente Notizen, Suche, PNG-Export und Quellen-Dialog. Er aktualisiert zugleich die Screenshots in `docs/`.
+Der Test startet den lokalen Server selbst und prüft Desktop und Mobilansicht, Moduswechsel, die acht Strukturen, Prozessschritte, persistente Notizen, Suche, PNG-Export und Quellen-Dialog. Prüfbilder landen in `test-results/`. Die README-Galerie erzeugt `node scripts/gallery.cjs`; PNG-Aufnahmen können für die Dokumentation verlustarm als WebP gespeichert werden.
 
 ## Modelle richtig lesen
 
@@ -138,11 +195,6 @@ Alle Vereinfachungen, Datenherkünfte und Lizenzen stehen in [NOTICE.md](NOTICE.
 
 ---
 
-```text
- E L E M E N T A
- ───────────────
- ATOME. BINDUNGEN. ZUSAMMENHÄNGE.
- DGKN@Labs · ATLAS 04
-```
+
 
 <div align="center"><b>Große Zusammenhänge beginnen bei kleinen Teilchen.</b><br><sub>DGKN@Labs · ELEMENTA</sub></div>
