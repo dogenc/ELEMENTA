@@ -1,6 +1,23 @@
 <div align="center">
 <img src="docs/banner.svg" width="100%" alt="ELEMENTA — Die Materie verstehen. DGKN@Labs, Atlas 04">
 
+<img src="docs/logo.svg" alt="ELEMENTA – Chemieatlas in 3D, Open Source" width="720">
+
+<details>
+<summary>Originales ASCII-Logo zum Kopieren</summary>
+
+```text
+███████╗ ██╗      ███████╗ ███╗   ███╗ ███████╗ ███╗   ██╗ ████████╗  █████╗
+██╔════╝ ██║      ██╔════╝ ████╗ ████║ ██╔════╝ ████╗  ██║ ╚══██╔══╝ ██╔══██╗
+█████╗   ██║      █████╗   ██╔████╔██║ █████╗   ██╔██╗ ██║    ██║    ███████║
+██╔══╝   ██║      ██╔══╝   ██║╚██╔╝██║ ██╔══╝   ██║╚██╗██║    ██║    ██╔══██║
+███████╗ ███████╗ ███████╗ ██║ ╚═╝ ██║ ███████╗ ██║ ╚████║    ██║    ██║  ██║
+╚══════╝ ╚══════╝ ╚══════╝ ╚═╝     ╚═╝ ╚══════╝ ╚═╝  ╚═══╝    ╚═╝    ╚═╝  ╚═╝
+            C H E M I E A T L A S  ·  3 D  ·  O P E N  S O U R C E
+```
+
+</details>
+
 **Vom einzelnen Elektron bis zum Molekül des Alltags.**  
 Ein interaktiver Chemie-Atlas auf Deutsch — direkt im Browser.
 
@@ -9,22 +26,12 @@ Ein interaktiver Chemie-Atlas auf Deutsch — direkt im Browser.
 ![Strukturen](https://img.shields.io/badge/PubChem-8_Einträge-167568?style=for-the-badge)
 ![Abläufe](https://img.shields.io/badge/Abläufe-3_animiert-167568?style=for-the-badge)
 
-```text
-█████  █      █████  █   █  █████  █   █  █████   ███ 
-█      █      █      ██ ██  █      ██  █    █    █   █
-█      █      █      █ █ █  █      ██  █    █    █   █
-████   █      ████   █ █ █  ████   █ █ █    █    █████
-█      █      █      █   █  █      █  ██    █    █   █
-█      █      █      █   █  █      █  ██    █    █   █
-█████  █████  █████  █   █  █████  █   █    █    █   █
-```
-
 **[Starten](#starten) · [Entdecken](#drei-perspektiven-auf-materie) · [Screenshots](#echte-einblicke) · [Quellen](NOTICE.md)**
 </div>
 
 ## Chemie wird räumlich
 
-ELEMENTA ist der vierte Atlas von **DGKN@Labs**, nach CORPUS, [CELLULA](https://github.com/dogenc/CELLULA) und [TERRA](https://github.com/dogenc/TERRA). Helle Lernpanels, ein großes 3D-Studio und eine ruhige grüne Farbwelt machen den Zusammenhang zwischen Struktur und Verhalten sichtbar.
+ELEMENTA ist der vierte Atlas von **DGKN@Labs**, nach [CORPUS](https://github.com/dogenc/CORPUS-Anatomieatlas), [CELLULA](https://github.com/dogenc/CELLULA) und [TERRA](https://github.com/dogenc/TERRA). Helle Lernpanels, ein großes 3D-Studio und eine ruhige grüne Farbwelt machen den Zusammenhang zwischen Struktur und Verhalten sichtbar.
 
 **Kein Build. Kein API-Key. Kein Konto.** Three.js und alle verwendeten Daten liegen im Repository. Die laufende App braucht keine externe Datenverbindung; Quellenlinks führen nach außen.
 
@@ -195,6 +202,12 @@ Alle Vereinfachungen, Datenherkünfte und Lizenzen stehen in [NOTICE.md](NOTICE.
 
 ---
 
+<div align="center">
+<br>
+<img src="docs/banner-footer.svg" alt="Omnia ex elementis – Die Materie verstehen" width="100%">
 
+**Große Zusammenhänge beginnen bei kleinen Teilchen.**<br>
+<sub>ELEMENTA · DGKN@Labs · Atlas 04</sub><br>
+<sub>[CORPUS · Der Körper](https://github.com/dogenc/CORPUS-Anatomieatlas) &nbsp; / &nbsp; [CELLULA · Die Zelle](https://github.com/dogenc/CELLULA) &nbsp; / &nbsp; [TERRA · Die Erde](https://github.com/dogenc/TERRA) &nbsp; / &nbsp; <b>ELEMENTA · Die Materie</b></sub>
 
-<div align="center"><b>Große Zusammenhänge beginnen bei kleinen Teilchen.</b><br><sub>DGKN@Labs · ELEMENTA</sub></div>
+</div>
