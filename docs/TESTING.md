@@ -17,3 +17,7 @@ Grenzen: Kein Test auf physischem iPhone/Android, kein Safari-/Firefox-Durchlauf
 - Desktop-Protokollpfade geprüft: fremde Origins und kodierte Pfadausbrüche werden abgewiesen.
 - Acht neue Galerieaufnahmen, Desktop 1800 × 1160 und Mobil 430 Pixel breit.
 - Native Windows-/macOS-Prüfung und Paketierung laufen im [Release-Workflow](https://github.com/dogenc/ELEMENTA/actions/workflows/desktop.yml). Maßgeblich ist dessen Ergebnis, nicht ein lokaler Linux-Test.
+
+## Update 1.1.1
+
+- Atlas-Navigation um ASTRA (Atlas 05) erweitert; Browser- und Datenprüfungen erneut erfolgreich (fünf Atlas-Reiter).

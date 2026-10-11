@@ -21,7 +21,7 @@
 **Vom einzelnen Elektron bis zum Molekül des Alltags.**  
 Ein interaktiver Chemie-Atlas auf Deutsch — direkt im Browser.
 
-![Version](https://img.shields.io/badge/Version-1.1.0-167568?style=for-the-badge)
+![Version](https://img.shields.io/badge/Version-1.1.1-167568?style=for-the-badge)
 ![Elemente](https://img.shields.io/badge/Elemente-118-167568?style=for-the-badge)
 ![Strukturen](https://img.shields.io/badge/PubChem-8_Einträge-167568?style=for-the-badge)
 ![Abläufe](https://img.shields.io/badge/Abläufe-3_animiert-167568?style=for-the-badge)
@@ -121,10 +121,10 @@ Die Website ist statisch. Es gibt keinen Service Worker und keine automatische O
 
 | Paket | Verwendung |
 |---|---|
-| `ELEMENTA-1.1.0-Windows-Setup.exe` | Installierbare Windows-App, x64 |
-| `ELEMENTA-1.1.0-Windows-portable.exe` | Ohne Installation starten, x64 |
-| `ELEMENTA-1.1.0-macOS.dmg` | macOS-App für Intel und Apple Silicon |
-| `ELEMENTA-1.1.0-Web.zip` | Statische Dateien für die eigene Domain |
+| `ELEMENTA-1.1.1-Windows-Setup.exe` | Installierbare Windows-App, x64 |
+| `ELEMENTA-1.1.1-Windows-portable.exe` | Ohne Installation starten, x64 |
+| `ELEMENTA-1.1.1-macOS.dmg` | macOS-App für Intel und Apple Silicon |
+| `ELEMENTA-1.1.1-Web.zip` | Statische Dateien für die eigene Domain |
 | `SHA256SUMS.txt` | Prüfsummen der Downloads |
 
 Der Workflow veröffentlicht diese Dateien **erst nach erfolgreichen Daten-, Browser- und nativen Desktop-Prüfungen**. Bei einem noch laufenden oder fehlgeschlagenen Build stehen sie entsprechend noch nicht bereit. Windows- und macOS-Pakete sind ohne kommerzielles Herausgeberzertifikat; macOS ist nicht notarisiert. Das Betriebssystem kann deshalb Warnungen anzeigen.
@@ -145,7 +145,7 @@ npm run dist:mac
 
 ## Die Atlas-Familie
 
-Die Leiste am unteren App-Rand verbindet alle vier Projekte. Auf dem Smartphone passen sich die Reiter auf zwei Spalten an.
+Die Leiste am unteren App-Rand verbindet alle fünf Projekte. Auf dem Smartphone passen sich die Reiter auf zwei Spalten an.
 
 | Atlas | Thema |
 |---|---|
@@ -153,6 +153,7 @@ Die Leiste am unteren App-Rand verbindet alle vier Projekte. Auf dem Smartphone 
 | [**02 · CELLULA**](https://github.com/dogenc/CELLULA) | Die Welt der Zellen |
 | [**03 · TERRA**](https://github.com/dogenc/TERRA) | Unser Planet |
 | **04 · ELEMENTA** | Die Materie verstehen |
+| [**05 · ASTRA**](https://github.com/dogenc/ASTRA) | Das Universum verstehen |
 
 ## Technik und Bearbeitung
 
@@ -208,6 +209,6 @@ Alle Vereinfachungen, Datenherkünfte und Lizenzen stehen in [NOTICE.md](NOTICE.
 
 **Große Zusammenhänge beginnen bei kleinen Teilchen.**<br>
 <sub>ELEMENTA · DGKN@Labs · Atlas 04</sub><br>
-<sub>[CORPUS · Der Körper](https://github.com/dogenc/CORPUS-Anatomieatlas) &nbsp; / &nbsp; [CELLULA · Die Zelle](https://github.com/dogenc/CELLULA) &nbsp; / &nbsp; [TERRA · Die Erde](https://github.com/dogenc/TERRA) &nbsp; / &nbsp; <b>ELEMENTA · Die Materie</b></sub>
+<sub>[CORPUS · Der Körper](https://github.com/dogenc/CORPUS-Anatomieatlas) &nbsp; / &nbsp; [CELLULA · Die Zelle](https://github.com/dogenc/CELLULA) &nbsp; / &nbsp; [TERRA · Die Erde](https://github.com/dogenc/TERRA) &nbsp; / &nbsp; <b>ELEMENTA · Die Materie</b> &nbsp; / &nbsp; [ASTRA · Das Universum](https://github.com/dogenc/ASTRA)</sub>
 
 </div>
